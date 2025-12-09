@@ -89,7 +89,7 @@ DATABASES = {
             'username': '',
             'password': '',
             'authSource': 'admin',
-            'authMechanism': '',
+            # 'authMechanism': 'DEFAULT',  # Omit or set to DEFAULT if needed
         },
     }
 }
