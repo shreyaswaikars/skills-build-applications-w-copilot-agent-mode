@@ -1,38 +1,93 @@
+
 .App {
   text-align: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e3f0ff 100%);
+  min-height: 100vh;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%) !important;
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+}
+.navbar-brand img {
+  height: 48px;
+  margin-right: 8px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2, h3, h4, h5 {
+  color: #007bff;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+.table {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.table-dark th {
+  background: #007bff !important;
+  color: #fff !important;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background: #e3f0ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary, .btn-info, .btn-success, .btn-warning, .btn-danger {
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,123,255,0.1);
 }
+.btn-primary {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+}
+.btn-info {
+  background: linear-gradient(90deg, #17a2b8 0%, #00c6ff 100%);
+}
+.btn-success {
+  background: linear-gradient(90deg, #28a745 0%, #00c6ff 100%);
+}
+.btn-warning {
+  background: linear-gradient(90deg, #ffc107 0%, #00c6ff 100%);
+}
+.btn-danger {
+  background: linear-gradient(90deg, #dc3545 0%, #00c6ff 100%);
+}
+.btn-outline-primary, .btn-outline-info, .btn-outline-success, .btn-outline-warning, .btn-outline-danger {
+  font-weight: 600;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: #fff;
+}
+.modal-content {
+  border-radius: 12px;
+}
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #007bff;
+}
+
